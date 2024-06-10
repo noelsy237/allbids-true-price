@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Allbids-True-Price",
+    "version": "1.0",
+  
+    "description": "Shows post-fee prices for allbids.com.au",
+  
+    "icons": {
+      "48": "icons/icon.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.allbids.com.au/*"],
+        "js": ["trueprice.js"]
+      }
+    ]
+  }
+  
